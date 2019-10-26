@@ -72,8 +72,7 @@ Once the first command is done, you can query the freshly created _movies_ index
 
 ```bash
 cargo run --release --example from_file -- \
-    search example.mdb
-    --number 4 \
-    --filter '!adult' \
-    id popularity adult original_title
+    search example.mdb \
+    --number-results 4 \
+    id title poster overview release_date
 ```
